@@ -56,7 +56,7 @@ function page() {
                 </div>
                 <span className='w-full h-[max-content] mt-8 mb-5 flex gap-1 items-center justify-center border-b-2 border-blue-200 p-2'>
                         <LuHistory className='text-green-300 font-bold text-xl'/><span className='text-gray-600'>recent activity</span></span>
-                <div className='flex flex-col items-start justify-start h-[63vh] overflow-y-scroll '>
+                <div className={`flex flex-col items-start justify-start ${history.length > 0 ? 'h-[63vh] overflow-y-scroll' : 'h-full'}  `}>
                     
                     {history.length > 0 ?
                         history.reverse().map((item, index) => {
@@ -99,7 +99,11 @@ function page() {
                             )
                         })
 
-                        : 'no history'}
+                        : 
+                        <div className='mt-10'>
+                            no history
+                        </div>
+                        }
                 </div>
             </section>
         </div>

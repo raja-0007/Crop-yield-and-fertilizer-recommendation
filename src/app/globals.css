@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::after{
+    color: rgb(79, 246, 79);
+    
+    
+    
+}
+
+

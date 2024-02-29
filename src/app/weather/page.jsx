@@ -160,7 +160,7 @@ function page() {
 
     return (
         <div className='h-[100vh] relative flex flex-col'>
-            <img src="/bg1.jpg" className='absolute top-0 w-full h-[100vh] z-0 opacity-20' alt="" />
+            <img src="/bg1.jpg" className='absolute top-0 w-full h-[100vh] z-0 opacity-40' alt="" />
             <Navbar />
 
             <div className='w-[80%] p-12 pb-7 flex flex-col mx-auto bg-gray-400 mt-6 bg-opacity-20 z-10 shadow-md shadow-gray-400 rounded-lg'>

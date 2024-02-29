@@ -26,19 +26,19 @@ export default function Home() {
   
   
   return (
-    <div className={`w-full min-h-screen flex flex-col bg-gray-50`}>
+    <div className={`w-full min-h-screen flex flex-col bg-black`}>
       <Navbar userdetails={userdetails} />
       <div className="mx-auto flex flex-col justify-center items-center gap-5 py-12 mt-20 z-10 relative">
         <motion.h2
           initial={{ top: '0px', left:'120px'}}
           animate={{ top: '0px', right:'', left:'' }}
           transition={{ duration: 0.8 }}
-          className="w-[max-content] font-bold text-3xl text-blue-500 absolute">Crop Yield And Fertilizer Recommendation</motion.h2>
+          className="w-[max-content] font-bold text-3xl text-slate-200  absolute">Crop Yield And Fertilizer Recommendation</motion.h2>
         <motion.span
           initial={{opacity:0.1}}
           animate={{ opacity:1 }}
           transition={{ duration: 2 }}
-         className="text-center text-gray-500 text-md">
+         className="text-center text-slate-300 font-semibold text-md">
           <p>
             Get started to know the crop yield of your land
             and get the best fertilizer recommendation by
@@ -61,7 +61,7 @@ export default function Home() {
 
 
       </div>
-      <img src="/rural rice field.png" className="w-full absolute bottom-0 z-0" alt="" />
+      <img src="/home_bg3.jpg" className="w-full absolute h-full object-cover bottom-0 z-0 opacity-80" alt="" />
 
     </div>
   );

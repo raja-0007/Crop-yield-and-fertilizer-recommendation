@@ -127,6 +127,7 @@ function Authentication({ params }) {
         router.push('/')
       }
       else if (isLoggedIn.status === 'already exists') alert('email already exists')
+      else if(isLoggedIn.status === false) alert('invalid emailId')
     }
 
   }, [isLoggedIn])
